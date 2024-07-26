@@ -1,0 +1,16 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+a { text-decoration: none; color: black; }
+ul,ol,li { list-style: none }
+fieldset {
+    border: none;
+}
+html {
+    font-size: 16px;
+}
+:root {
+    --lighten-2-color: #FFDBEA;
+    --lighten-1-color: #FFDCD4;
+    --primary-color: #FF89AD;
+    --darken-1-color: #D82C5F;
+    --darken-2-color: #8A082F;
+}
