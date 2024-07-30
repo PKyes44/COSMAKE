@@ -1,4 +1,4 @@
-* { margin: 0; padding: 0; box-sizing: border-box; }
+* { margin: 0; padding: 0; box-sizing: border-box; outline: none; }
 a { text-decoration: none; color: black; }
 ul,ol,li { list-style: none }
 fieldset {
@@ -7,6 +7,13 @@ fieldset {
 html {
     font-size: 16px;
 }
+main {
+    width: 100%;
+    height: 100vh;
+    padding: 0 10%;
+    box-sizing: border-box;
+}
+
 :root {
     --lighten-2-color: #FFDBEA;
     --lighten-1-color: #FFDCD4;
@@ -14,3 +21,5 @@ html {
     --darken-1-color: #D82C5F;
     --darken-2-color: #8A082F;
 }
+
+

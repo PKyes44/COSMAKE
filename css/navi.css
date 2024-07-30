@@ -1,0 +1,83 @@
+@charset "UTF-8"; @import "./reset.css";
+
+header {
+    width: 100%;
+    height: 10vh;
+    box-sizing: border-box;
+    position: relative;
+}
+/* LOGO */
+header > img {
+    width: 15%;
+    height: 500%;
+    object-fit: cover;
+
+    position: absolute;
+    top: 60%;
+    left: 0%;
+    transform: translateY(-50%);
+}
+
+/* search input */
+main header input.search {
+    width: 0%;
+    height: 50%;
+
+    padding-bottom: -10px;
+    
+    position: absolute;
+    top: 55%;
+    right: 14%;
+    transform: translateY(-50%);
+
+    border: none;
+    border-bottom: 1px solid black;
+    transition: all 1s;
+
+    outline: none;
+
+    font-size: 1.1rem;
+}
+
+/* Navigation Bar */
+nav {
+    position: absolute;
+    top: 60%;
+    right: 0%;
+    transform: translateY(-50%);
+}
+nav i {
+    margin-left: 40px;  
+}
+nav img {
+    width: 35px; 
+    height: 35px;
+    margin-left: 20px;
+}
+
+/* Search Animation */
+main header input.active {
+    width: 50%;
+    height: 50%;
+    
+    position: absolute;
+    top: 55%;
+    right: 14%;
+    transform: translateY(-50%);
+
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+/* user details */
+main header .user-details {
+    width: 20%;
+    height: 15vh;
+    
+    position: absolute;
+    top: 150%;
+    right: 0%;
+    transform: translate(-50%, -50%);
+
+    background-color: #aaa;
+}

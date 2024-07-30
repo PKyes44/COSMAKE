@@ -1,44 +1,4 @@
-@charset "UTF-8"; @import "./reset.css";
-
-main {
-    width: 100%;
-    height: 100vh;
-    padding: 0 10%;
-    box-sizing: border-box;
-}
-
-/* Navigation Bar */
-header {
-    width: 100%;
-    height: 10vh;
-    box-sizing: border-box;
-    position: relative;
-}
-header > img {
-    width: 15%;
-    height: 500%;
-    object-fit: cover;
-
-    position: absolute;
-    top: 70%;
-    left: 0%;
-    transform: translateY(-50%);
-}
-nav {
-    position: absolute;
-    top: 70%;
-    right: 0%;
-    transform: translateY(-50%);
-}
-nav i {
-    margin-left: 40px;  
-}
-nav img {
-    
-    width: 35px; 
-    height: 35px;
-    margin-left: 20px;
-}
+@charset "UTF-8"; @import "./reset.css"; @import "./navi.css";
 
 /* section */
 section {
@@ -86,7 +46,7 @@ section article form fieldset legend {
     left: 50%;
 }
 section article form fieldset div,
-section article form fieldset div input[type=submit]  {
+section article form fieldset input[type=submit]  {
     width: 35%;
     height: 70%;
     display: block;
@@ -95,6 +55,15 @@ section article form fieldset div input[type=submit]  {
 
     position: relative;
 }
+section article form fieldset input[type=submit] {
+    transition: all 1s;
+    color: #bbb;
+    border-radius: 10px;
+    border: 0.8px solid #aaa;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
 section article form fieldset div input[type=tel],
 section article form fieldset div input[type=text],
 section article form fieldset div input[type=password]{
@@ -112,19 +81,7 @@ section article .login-form fieldset .login-pwd {
     margin-bottom: 2%;
 }
 
-section article form fieldset input[type=submit] {
-    transition: all 1s;
-    color: #bbb;
-    border-radius: 10px;
-    border: 0.8px solid #aaa;
-    padding: 0 10px;
-    box-sizing: border-box;
-    color: #bbb;
-    width: 35%;
-    height: 70%;
-    display: block;
-    margin: 0 auto;
-}
+
 
 /* login-others */
 section article .login-others {
@@ -177,33 +134,24 @@ section article form fieldset input[type=submit]:hover {
 }
 
 /* login error message */
-section article form::before {
-    content: "아이디를 다시 확인해주세요";
-    font-size: 0.8rem;
-    color: white;
-    display: block;
-    box-sizing: border-box;
-
+section article .login-form .error-msg img {
     position: absolute;
-    top: -50%;
-    left: 50%;
+    top: -55%;
+    left: 40%;
     transform: translate(-50%, -50%);
-    
-    border: 1px solid #555;
-    border-radius: 30px;
-    padding: 12px 80px;
-    background-color: #555;
-    transition: all 1s;
+
+    width: 2%;
+
+    transition: all 0.5s;
 }
-section article .login-form:hover::before {
-    content: "아이디를 다시 확인해주세요";
+section article .login-form .error-msg p {
     font-size: 0.8rem;
     color: white;
     display: block;
     box-sizing: border-box;
 
     position: absolute;
-    top: -25%;
+    top: -55%;
     left: 50%;
     transform: translate(-50%, -50%);
     
@@ -211,6 +159,19 @@ section article .login-form:hover::before {
     border-radius: 30px;
     padding: 12px 80px;
     background-color: #555;
+    
+    transition: all 0.5s;
+}
+section article .login-form:hover .error-msg img {
+    position: absolute;
+    top: -30%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+
+    width: 2%;
+}
+section article .login-form:hover .error-msg p {
+    top: -30%;
 }
 
 /* regist form */
@@ -277,18 +238,3 @@ section article .regist-form fieldset div:hover img {
         margin: 0 auto;
     }
 }
-
-/* MEDIAQUERY */
-/* @media screen and (max-width: 1064px) {
-    section article .cosmake-logo {
-        height: 60%;
-    }
-    section article form {
-        padding-top: 10%;
-    }
-    section article form fieldset div,
-    section article form fieldset input[type=submit] {
-        width: 50%;
-        height: 32%;
-    }
-} */
