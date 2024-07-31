@@ -8,12 +8,12 @@ header {
 }
 /* LOGO */
 header > img {
-    width: 15%;
-    height: 500%;
+    width: 12%;
+    height: 60%;
     object-fit: cover;
 
     position: absolute;
-    top: 60%;
+    top: 55%;
     left: 0%;
     transform: translateY(-50%);
 }
