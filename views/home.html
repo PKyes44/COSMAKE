@@ -5,6 +5,11 @@
     <title>COSMAKE HOME</title>
     <link rel='stylesheet' href='../css/home.css'>
     <script defer src="../js/navi.js"></script>
+    <script defer src="../js/swiper.js"></script>
+
+    <!-- swiper cdn-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 <body>
     <main>
@@ -29,21 +34,17 @@
         </header>
         <!-- section -->
         <section>
-            <!-- slide -->
-            <article class="slide">
-                <div class="slide-1">
-                    <img src="../img/cosmetic-slide1.jpg" alt="">
+            <!-- swiper -->
+            <article class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <img class="swiper-slide" src="../img/cosmetic-slide1.jpg" alt="">
+                    <img class="swiper-slide" src="../img/cosmetic-slide2.jpg" alt="">
+                    <img class="swiper-slide" src="../img/cosmetic-slide3.jpg" alt="">
+                    <img class="swiper-slide" src="../img/cosmetic-slide4.jpg" alt="">
                 </div>
-                <div class="slide-2">
-                    <img src="../img/cosmetic-slide2.jpg" alt="">
-                </div>
-                <div class="slide-3">
-                    <img src="../img/cosmetic-slide3.jpg" alt="">
-                </div>
-                <div class="slide-4">
-                    <img src="../img/cosmetic-slide4.jpg" alt="">
-                </div>
-            </article>
+                <div class="swiper-pagination"></div>
+              </article>
+        
             <!-- category -->
             <article class="category">
                 <div class="row-1">
